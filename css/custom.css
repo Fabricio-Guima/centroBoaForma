@@ -1,0 +1,368 @@
+/*Reset*/
+
+html, body {
+    height: 100%;
+}
+
+.bloco {
+    min-height: 100%;
+    padding-top: 94px;
+    
+}
+/*Tirando margin-bottom das sections*/
+.row {
+    margin-bottom: 0;
+}
+
+
+/*Colors*/
+
+.blue-logo {
+    background-color: #2dc7d0;
+}
+
+
+
+/*Home*/
+
+.home {
+    animation: mudarBg 20s infinite;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/*Home animation*/
+@keyframes mudarBg {
+    40% {
+        background-image: url('../img/bg2.jpg');
+    }
+    
+    80% {
+        background-image: url('../img/bg3.jpg');
+    }
+    
+    100% {
+        background-image: url('../img/bg.jpg');
+    }
+}
+
+/*Logo*/
+
+.logo_text { 
+    font-size: 0;
+    margin: 0;
+}
+
+.logo_img {
+   width: 100px;
+   margin-top: 15px;
+}
+
+/*Nav*/
+
+.navbar {
+    background-color: transparent;
+    transition: background 0.5s linear;
+}
+
+.navbar ul a:hover {
+    background-color: transparent;
+    color: #2dc7d0;
+}
+
+.nav-color {
+    background-color: rgba(0,0,0,0.7);
+    transition: background 0.5s linear;
+}
+
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 94px;
+  line-height: 94px;
+}
+
+nav.nav-extended .nav-wrapper {
+  min-height: 94px;
+  height: auto;
+}
+
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+  z-index: 997;
+}
+
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {
+  display: block;
+  font-size: 24px;
+  height: 94px;
+  line-height: 94px;
+}
+
+.sidenav {
+    background: url('../img/textura2.png');
+}
+
+.sidenav li > a {
+    color: #fff;
+    font-weight: 100;
+}
+
+.sidenav li > a:hover {
+    background: #2dc7d0;
+}
+
+/*Sobre*/
+.sobre {
+    background-image: url('../img/textura1.png');
+    
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.sobre h2::after {
+    
+    content: '';
+    display: block;
+    margin:  10px auto;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+}
+
+.sobre p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.sobre .missao-visao-valores {
+    padding: 20px 0;
+    margin-top: 35px;
+}
+
+.sobre .missao-visao-valores .icon {
+    color: #fff;
+}
+
+.sobre .missao-visao-valores h3 {
+
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.sobre .missao-visao-valores p {
+    text-align: center;
+}
+
+/*Serviços*/
+.servicos {
+    background-image: url('../img/textura2.png');
+
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.servicos h2::after {
+    
+    content: '';
+    display: block;
+    margin:  10px auto;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+}
+
+.servicos p {
+    color: #212121;
+    line-height: 1.8rem;
+}
+
+.card {
+    border: 2px solid #2dc7d0;
+
+}
+
+.card-content {
+    
+    height: 220px;
+}
+
+.servicos .btn-horario {
+    padding-bottom: 20px;
+}
+
+.tabs {
+    background-color: #222;
+    
+}
+
+.tabs .tab a {
+    color: #fff;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #2dc7d0;
+
+}
+
+.tabs .indicator {
+    background-color: #2dc7d0
+}
+
+/*Unidades*/
+.unidades {
+    background-image: url('../img/bg-unidades.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.unidades h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.unidades h2::after {
+    
+    content: '';
+    display: block;
+    margin:  10px auto;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+}
+
+.unidades p {
+    color: #212121;
+    line-height: 1.8rem;
+}
+
+}
+
+/*Contato*/
+.contato {
+    background-image: url('../img/textura1.png');
+    background-repeat: no-repeat;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.contato h2::after {
+    
+    content: '';
+    display: block;
+    margin:  10px auto;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+}
+
+.contato .mapa {
+    min-height: 550px;
+}
+
+.contato h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.contato .mapa iframe {
+    width: 100%;
+    min-height: 550px;
+    border: none;
+}
+
+.contato .informacoes {
+    background-image: url('../img/textura2.png');
+    min-height: 550px;
+    padding: 30px;
+
+}
+
+.contato .informacoes h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.contato .formulario {
+    min-height: 550px;
+    padding: 30px;
+}
+
+
+
+
+/*Media query*/
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+@media only screen and (min-width: 601px) {
+    .banner {
+        padding-top: 4.5rem;
+    }
+    
+    .banner h2 {
+        font-size: 4rem;
+    }
+
+    .container {
+        width: 85%;
+    }
+}
+
+
+@media only screen and (min-width: 993px) {
+     .banner {
+        padding-top: 4.5rem;
+    }
+    
+    
+    .banner h2 {
+        font-size: 5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card-image-horizontal {
+        display: none;
+    }
+}
+
+
+
+
